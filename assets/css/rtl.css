@@ -1,0 +1,52 @@
+﻿body[dir="rtl"] {
+  font-family: var(--font-body);
+}
+
+body[dir="rtl"] .logo-icon {
+  transform: rotate(10deg);
+}
+
+body[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%) translateY(15px);
+}
+
+body[dir="rtl"] .nav-item-dropdown:hover .dropdown-menu {
+  transform: translateX(50%) translateY(5px);
+}
+
+body[dir="rtl"] .dropdown-link:hover {
+  transform: translateX(-4px);
+}
+
+body[dir="rtl"] .fc-1 {
+  left: auto;
+  right: -40px;
+}
+
+body[dir="rtl"] .fc-2 {
+  right: auto;
+  left: -40px;
+}
+
+body[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+body[dir="rtl"] .cart-drawer {
+  right: auto;
+  left: -400px;
+  box-shadow: 10px 0 40px rgba(0,0,0,0.1);
+}
+
+body[dir="rtl"] .cart-drawer.active {
+  left: 0;
+  right: auto;
+}
+
+/* RTL mode footer logo alignment */
+[dir="rtl"] .footer-brand .logo-link { justify-content: flex-start; text-align: right; }
+[dir="rtl"] .footer-brand { text-align: right; }
+

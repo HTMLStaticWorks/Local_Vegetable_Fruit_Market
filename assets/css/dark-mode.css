@@ -1,0 +1,223 @@
+/* FreshBasket — Dark Mode Overrides v2.0
+   Warm earthy dark palette matching the premium design system */
+
+body.dark-mode {
+  --bg-primary: #141910;
+  --bg-secondary: #1C2217;
+  --bg-warm: #1A1F14;
+  --card-bg: #222A1C;
+  --text-primary: #F2F5EE;
+  --text-secondary: #9AA394;
+  --text-muted: #666F62;
+  --border: rgba(255, 255, 255, .07);
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, .3);
+  --shadow-md: 0 12px 40px rgba(0, 0, 0, .4);
+  --shadow-lg: 0 30px 80px rgba(0, 0, 0, .5);
+  --shadow-green: 0 20px 50px rgba(63, 141, 60, .12);
+  --author-bg: var(--card-bg);
+}
+
+/* Navbar */
+body.dark-mode .navbar-inner {
+  background: rgba(18, 23, 14, 0.8);
+}
+
+body.dark-mode .navbar.scrolled .navbar-inner {
+  background: rgba(18, 23, 14, 0.97);
+  border-bottom-color: rgba(255, 255, 255, .07);
+}
+
+/* Logo */
+body.dark-mode .logo-name {
+  color: #F2F5EE;
+}
+
+body.dark-mode .logo-name em {
+  color: var(--color-accent);
+}
+
+/* Nav */
+body.dark-mode .nav-link {
+  color: rgba(242, 245, 238, .55);
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+  color: var(--color-accent);
+  background: rgba(108, 155, 90, .1);
+}
+
+body.dark-mode .dropdown-menu {
+  background: #222A1C;
+  border-color: rgba(255, 255, 255, .07);
+}
+
+body.dark-mode .dropdown-link:hover {
+  background: rgba(255, 255, 255, .04);
+}
+
+body.dark-mode .icon-btn {
+  border-color: rgba(255, 255, 255, .1);
+  color: rgba(242, 245, 238, .6);
+  background: transparent;
+}
+
+body.dark-mode .icon-btn:hover {
+  background: rgba(255, 255, 255, .06);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* Trust bar */
+body.dark-mode .trust-bar {
+  background: var(--color-primary-deep);
+}
+
+/* Category cards */
+body.dark-mode .cat-overlay {
+  background: linear-gradient(to top, rgba(5, 8, 4, .9) 0%, rgba(5, 8, 4, .2) 60%);
+}
+
+/* Editorial features */
+body.dark-mode .ef-content {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .ef-badge {
+  background: rgba(108, 155, 90, .15);
+}
+
+/* Product cards */
+body.dark-mode .product-card {
+  background: var(--bg-secondary);
+  border-color: rgba(255, 255, 255, .07);
+}
+
+body.dark-mode .product-wishlist {
+  background: rgba(34, 42, 28, .85);
+  color: var(--text-secondary);
+}
+
+body.dark-mode .product-wishlist:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+body.dark-mode .btn-add-cart {
+  background: rgba(255, 255, 255, .06);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+body.dark-mode .product-card:hover .btn-add-cart {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Farm story */
+body.dark-mode .farm-panel {
+  border-bottom-color: rgba(255, 255, 255, .07);
+}
+
+body.dark-mode .farm-panel-num {
+  color: rgba(255, 255, 255, .04);
+}
+
+/* Seasonal section */
+body.dark-mode .seasonal-section::before {
+  background: var(--bg-secondary);
+}
+
+/* Testimonials */
+body.dark-mode .testimonial-card {
+  background: var(--bg-secondary);
+  border-color: rgba(255, 255, 255, .07);
+}
+
+body.dark-mode .t-text {
+  color: var(--text-primary);
+}
+
+body.dark-mode .testimonial-card::before {
+  color: rgba(108, 155, 90, .06);
+}
+
+/* Forms */
+body.dark-mode .form-control {
+  background: var(--bg-secondary);
+  border-color: rgba(255, 255, 255, .1);
+  color: var(--text-primary);
+}
+
+body.dark-mode .form-control:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(108, 155, 90, .12);
+}
+
+/* Cart drawer */
+body.dark-mode .cart-drawer {
+  background: var(--card-bg);
+}
+
+body.dark-mode .cart-item {
+  border-bottom-color: rgba(255, 255, 255, .07);
+}
+
+body.dark-mode .cart-total {
+  border-top-color: rgba(255, 255, 255, .07);
+}
+
+body.dark-mode .cart-close {
+  border-color: rgba(255, 255, 255, .1);
+  color: var(--text-secondary);
+}
+
+body.dark-mode .cart-close:hover {
+  background: rgba(255, 255, 255, .08);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, .2);
+}
+
+/* Buttons */
+body.dark-mode .btn-outline {
+  border-color: rgba(255, 255, 255, .15);
+  color: var(--text-primary);
+}
+
+body.dark-mode .btn-outline:hover {
+  background: rgba(255, 255, 255, .08);
+  border-color: rgba(255, 255, 255, .3);
+  color: #fff;
+}
+
+/* Footer */
+body.dark-mode .footer {
+  background: #080B07;
+}
+
+/* Page Hero */
+body.dark-mode .page-hero {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .page-hero::after {
+  background: var(--bg-primary);
+}
+
+/* Select Dropdown Arrow in Dark Mode */
+body.dark-mode select.form-control {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23F2F5EE' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 40px;
+}
+
+[dir="rtl"] body.dark-mode select.form-control {
+  background-position: left 15px center;
+  padding-right: 15px;
+  padding-left: 40px;
+}
