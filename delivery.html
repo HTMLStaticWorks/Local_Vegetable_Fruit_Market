@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="organic produce, farm to table, fresh vegetables, organic fruits, local farmers, sustainable agriculture">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%233F8D3C'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-weight='bold' fill='white'%3EF%3C/text%3E%3C/svg%3E">
+  <title>FreshBasket | Delivery Coverage & Process</title>
+  <meta name="description" content="Read about our temperature-controlled direct delivery process. View delivery zones, morning dispatch times, and biodegrade packaging policies.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <style>
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px 0;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: var(--border);
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      text-align: left;
+    }
+    .timeline-badge {
+      position: absolute;
+      top: 25px;
+      right: -15px;
+      background: var(--color-primary);
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      z-index: 10;
+    }
+    .timeline-item:nth-child(even) .timeline-badge {
+      left: -15px;
+      right: auto;
+    }
+    .timeline-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: 0 10px 25px var(--shadow);
+    }
+    
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 20px;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left !important;
+      }
+      .timeline-item:nth-child(even) {
+        left: 0;
+      }
+      .timeline-badge {
+        left: 5px !important;
+        right: auto !important;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Floating Leaves Animation Layer -->
+  <div class="floating-leaves-container"></div>
+
+  <!-- Premium Navigation -->
+  <!-- Premium Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo-link" aria-label="FreshBasket Home">
+        <div class="logo-icon">F</div>
+        <span class="logo-text">Fresh<span>Basket</span></span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item-dropdown">
+          <a href="index.html" class="nav-link">Home &#9662;</a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link">Organic Marketplace</a>
+            <a href="home-2.html" class="dropdown-link">Harvest Storytelling</a>
+          </div>
+        </li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="seasonal-produce.html" class="nav-link">Seasonal</a></li>
+        <li><a href="farmers.html" class="nav-link">Our Farmers</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li class="mobile-nav-actions">
+          <button class="icon-btn cart-toggle-btn" aria-label="Open basket" title="Your Basket">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          </button>
+          <button class="icon-btn mode-toggle-btn" aria-label="Toggle theme" title="Dark mode">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <button class="icon-btn rtl-toggle-btn" aria-label="Toggle RTL" title="RTL mode">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="7" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
+          </button>
+          <a href="register.html" class="nav-link nav-cta mobile-signup-btn">Sign Up</a>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn cart-toggle-btn" aria-label="Open basket" title="Your Basket">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        </button>
+        <button class="icon-btn mode-toggle-btn" aria-label="Toggle theme" title="Dark mode">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="icon-btn rtl-toggle-btn" aria-label="Toggle RTL" title="RTL mode">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="7" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
+        </button>
+        <a href="register.html" class="nav-link nav-cta">Sign Up</a>
+        <button class="mobile-menu-btn" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero banner -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">Logistics Integrity</span>
+      <h1>Delivery Coverage & Timings</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &bull; <span>Delivery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 1: DELIVERY MAP & ZONES ═══════════════════════════════ -->
+  <section style="padding: 100px 0; background: var(--bg-secondary);">
+    <div class="container reveal">
+      <div class="section-header"><h2>Coverage Area</h2></div>
+      <div style="width: 100%; height: 400px; background: #ddd; border-radius: 20px; display: flex; align-items: center; justify-content: center;">[Interactive Coverage Map]</div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 2: DELIVERY SCHEDULE ══════════════════════════════════ -->
+  <section style="padding: 100px 0;">
+    <div class="container reveal">
+      <div class="section-header"><h2>Weekly Schedule</h2></div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div style="padding: 30px; border: 1px solid var(--border); border-radius: 20px;">
+          <h3>London (Zone 1-3)</h3><p>Daily, 6AM - 10AM</p>
+        </div>
+        <div style="padding: 30px; border: 1px solid var(--border); border-radius: 20px;">
+          <h3>Greater London</h3><p>Mon, Wed, Fri</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 3: ZERO WASTE PACKAGING ═══════════════════════════════ -->
+  <section style="padding: 100px 0; background: var(--bg-secondary);">
+    <div class="container reveal">
+      <div class="section-header"><h2>Zero Waste Commitment</h2></div>
+      <p style="font-size: 18px; max-width: 600px;">We deliver exclusively in reusable wooden crates and biodegradable wrapping.</p>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 4: TRACK YOUR BOX ═════════════════════════════════════ -->
+  <section style="padding: 100px 0;">
+    <div class="container reveal">
+      <div class="section-header"><h2>Live Tracking</h2></div>
+      <p style="font-size: 18px; max-width: 600px;">Receive SMS updates and live GPS tracking links when your driver is 30 minutes away.</p>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 5: FAQ SNIPPET ════════════════════════════════════════ -->
+  <section class="cta-immersive" style="background: url('assets/image/home1-bnr.jpg') center/cover fixed;">
+    <div class="cta-overlay" style="background: rgba(0,0,0,0.8);"></div>
+    <div class="cta-content reveal">
+      <h2>Have delivery questions?</h2>
+      <a href="faq.html" class="btn btn-primary" style="background: var(--color-secondary); color: var(--text-primary); border: none;">Read Delivery FAQs</a>
+    </div>
+  </section>
+
+  <!-- Premium Footer -->
+  <!-- Premium Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-link" style="margin-bottom:4px;">
+            <div class="logo-icon">F</div>
+            <span class="logo-text">Fresh<span>Basket</span></span>
+          </a>
+          <p>We connect farming families with health-conscious homes. Every order funds local agriculture and delivers nature's finest produce to your table.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.03-2.83.2-.79 1.31-5.54 1.31-5.54s-.33-.67-.33-1.67c0-1.56.91-2.73 2.03-2.73.96 0 1.42.72 1.42 1.58 0 .97-.61 2.41-.93 3.74-.27 1.12.55 2.03 1.63 2.03 1.95 0 3.27-2.49 3.27-5.44 0-2.24-1.51-3.91-4.24-3.91-3.09 0-5.01 2.31-5.01 4.89 0 .89.26 1.51.66 1.99.18.22.21.31.14.56-.05.18-.16.62-.2.8-.06.25-.25.34-.46.25-1.31-.54-1.92-1.99-1.92-3.62 0-2.68 2.26-5.89 6.73-5.89 3.6 0 5.97 2.6 5.97 5.4 0 3.7-2.06 6.47-5.1 6.47-1.02 0-1.97-.55-2.3-1.17l-.63 2.42c-.23.89-.85 2-1.27 2.68A10 10 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html">Shop All Produce</a></li>
+            <li><a href="seasonal-produce.html">Seasonal Availability</a></li>
+            <li><a href="farmers.html">Our Farming Partners</a></li>
+            <li><a href="gallery.html">Farm Gallery</a></li>
+            <li><a href="bulk-orders.html">Bulk &amp; Wholesale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Our Brand</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Organic Story</a></li>
+            <li><a href="delivery.html">Delivery Process</a></li>
+            <li><a href="pricing.html">Subscription Boxes</a></li>
+            <li><a href="blog.html">Recipes &amp; Articles</a></li>
+            <li><a href="home-2.html">Harvest Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html">Help &amp; FAQ</a></li>
+            <li><a href="contact.html">Get In Touch</a></li>
+            <li><a href="login.html">My Account</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="coming-soon.html">Newsletter Signup</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 FreshBasket Limited. All rights reserved. Sourced with love &amp; purpose.</div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top-btn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

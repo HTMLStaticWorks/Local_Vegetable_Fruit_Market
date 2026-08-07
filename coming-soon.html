@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="organic produce, farm to table, fresh vegetables, organic fruits, local farmers, sustainable agriculture">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%233F8D3C'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-weight='bold' fill='white'%3EF%3C/text%3E%3C/svg%3E">
+  <title>FreshBasket | Coming Soon</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <style>
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 500px;
+      margin: 40px auto;
+    }
+    .countdown-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 24px 16px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 25px var(--shadow);
+    }
+    .countdown-number {
+      font-family: var(--font-ui);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+    .countdown-label {
+      font-size: 11px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+  </style>
+
+</head>
+<body style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px;">
+
+  <!-- Floating Leaves Layer -->
+  <div class="floating-leaves-container"></div>
+
+  <div style="max-width: 600px; position: relative; z-index: 10;">
+    <a href="index.html" class="logo-link" style="justify-content: center; margin-bottom: 30px; display: inline-flex;">
+      <div class="logo-icon">F</div>
+      <span class="logo-text">Fresh<span>Basket</span></span>
+    </a>
+    <h2>We Are Planting Our Crops</h2>
+    <p style="color: var(--text-secondary); margin-top: 10px; font-size: 16px;">Our premium organic subscription system is launching soon. Get ready for sunrise harvesting delivered directly to your kitchen.</p>
+
+    <!-- Countdown -->
+    <div class="countdown-grid">
+      <div class="countdown-box">
+        <div class="countdown-number" id="days">24</div>
+        <div class="countdown-label">Days</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-number" id="hours">08</div>
+        <div class="countdown-label">Hours</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-number" id="minutes">45</div>
+        <div class="countdown-label">Mins</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-number" id="seconds">12</div>
+        <div class="countdown-label">Secs</div>
+      </div>
+    </div>
+
+    <!-- Subscriber Form -->
+    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Subscribed successfully! We will notify you.');" style="max-width: 450px; margin: 0 auto; display: flex; gap: 10px;">
+      <input type="email" class="form-control" placeholder="Enter your email address" required style="height: 50px;">
+      <button type="submit" class="btn-premium btn-primary" style="height: 50px; white-space: nowrap; padding: 0 30px;">Notify Me</button>
+    </form>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Simple mock countdown animation
+    setInterval(() => {
+      const secEl = document.getElementById('seconds');
+      if (secEl) {
+        let sec = parseInt(secEl.innerText);
+        if (sec > 0) {
+          sec--;
+        } else {
+          sec = 59;
+          const minEl = document.getElementById('minutes');
+          let min = parseInt(minEl.innerText);
+          if (min > 0) {
+            min--;
+            minEl.innerText = min < 10 ? '0' + min : min;
+          }
+        }
+        secEl.innerText = sec < 10 ? '0' + sec : sec;
+      }
+    }, 1000);
+  </script>
+  <button id="scroll-top-btn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+</body>
+</html>
+
+
+
+
+
+

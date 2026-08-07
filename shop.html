@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="organic produce, farm to table, fresh vegetables, organic fruits, local farmers, sustainable agriculture">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%233F8D3C'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-weight='bold' fill='white'%3EF%3C/text%3E%3C/svg%3E">
+  <title>FreshBasket | Shop Organic Produce � Farm-to-Table</title>
+  <meta name="description"
+    content="Sourced directly from local farms. Filter and choose the finest organic produce, exotic fruits, leafy greens, and vegetable boxes.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <style>
+    .shop-filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+
+    .filter-btn {
+      background: var(--card-bg);
+      border: 1.5px solid var(--border);
+      color: var(--text-secondary);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: var(--trans-fast);
+      letter-spacing: 0.02em;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(63, 141, 60, .2);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Floating Leaves Animation Layer -->
+  <div class="floating-leaves-container"></div>
+
+  <!-- Premium Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo-link" aria-label="FreshBasket Home">
+        <div class="logo-icon">F</div>
+        <span class="logo-text">Fresh<span>Basket</span></span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item-dropdown">
+          <a href="index.html" class="nav-link">Home &#9662;</a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link">Organic Marketplace</a>
+            <a href="home-2.html" class="dropdown-link">Harvest Storytelling</a>
+          </div>
+        </li>
+        <li><a href="shop.html" class="nav-link active">Shop</a></li>
+        <li><a href="seasonal-produce.html" class="nav-link">Seasonal</a></li>
+        <li><a href="farmers.html" class="nav-link">Our Farmers</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="mobile-nav-actions">
+          <button class="icon-btn cart-toggle-btn" aria-label="Open basket" title="Your Basket">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </button>
+          <button class="icon-btn mode-toggle-btn" aria-label="Toggle theme" title="Dark mode">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button class="icon-btn rtl-toggle-btn" aria-label="Toggle RTL" title="RTL mode">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;">
+              <line x1="21" y1="10" x2="7" y2="10"></line>
+              <line x1="21" y1="6" x2="3" y2="6"></line>
+              <line x1="21" y1="14" x2="7" y2="14"></line>
+              <line x1="21" y1="18" x2="3" y2="18"></line>
+            </svg>
+          </button>
+          <a href="register.html" class="nav-link nav-cta mobile-signup-btn">Sign Up</a>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn cart-toggle-btn" aria-label="Open basket" title="Your Basket">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </button>
+        <button class="icon-btn mode-toggle-btn" aria-label="Toggle theme" title="Dark mode">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn rtl-toggle-btn" aria-label="Toggle RTL" title="RTL mode">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;">
+            <line x1="21" y1="10" x2="7" y2="10"></line>
+            <line x1="21" y1="6" x2="3" y2="6"></line>
+            <line x1="21" y1="14" x2="7" y2="14"></line>
+            <line x1="21" y1="18" x2="3" y2="18"></line>
+          </svg>
+        </button>
+        <a href="register.html" class="nav-link nav-cta">Sign Up</a>
+        <button class="mobile-menu-btn" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero banner -->
+  <section class="page-hero"
+    style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/image/shop-bnr.jpg') center/cover; color: white; padding-top: 130px; margin-top: 0; min-height: 50vh; display: flex; align-items: center; justify-content: center;">
+    <div class="container" style="text-align: center;">
+      <span class="section-tag" style="color: rgba(255, 255, 255, 0.8); border-color: rgba(255, 255, 255, 0.3);">Organic
+        Marketplace</span>
+      <h1 style="color: white; margin-bottom: 20px;">Shop Our Produce</h1>
+      <p
+        style="color: rgba(255, 255, 255, 0.9); font-size: 18px; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6;">
+        Browse our wide selection of certified organic fruits, vegetables, and pantry staples delivered straight to your
+        door.</p>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 1: MAIN SHOP LAYOUT ════════════════════════════════════ -->
+  <section class="shop-main" style="padding: 80px 0; background: var(--bg-primary);">
+    <div class="container shop-layout">
+
+      <!-- Sidebar -->
+      <aside class="shop-sidebar reveal">
+        <!-- Categories -->
+        <div class="sidebar-widget" style="margin-bottom: 40px;">
+          <h3 style="font-family: var(--font-heading); margin-bottom: 20px; font-size: 20px;">Categories</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 12px;"><a href="#"
+                style="color: var(--text-secondary); text-decoration: none;">Vegetables <span
+                  style="float: right; color: var(--text-muted);">(48)</span></a></li>
+            <li style="margin-bottom: 12px;"><a href="#"
+                style="color: var(--color-primary); font-weight: 600; text-decoration: none;">Fruits <span
+                  style="float: right; color: var(--text-muted);">(32)</span></a></li>
+            <li style="margin-bottom: 12px;"><a href="#"
+                style="color: var(--text-secondary); text-decoration: none;">Leafy Greens <span
+                  style="float: right; color: var(--text-muted);">(15)</span></a></li>
+            <li style="margin-bottom: 12px;"><a href="#"
+                style="color: var(--text-secondary); text-decoration: none;">Fresh Herbs <span
+                  style="float: right; color: var(--text-muted);">(20)</span></a></li>
+            <li style="margin-bottom: 12px;"><a href="#"
+                style="color: var(--text-secondary); text-decoration: none;">Harvest Boxes <span
+                  style="float: right; color: var(--text-muted);">(4)</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Price Filter -->
+        <div class="sidebar-widget" style="margin-bottom: 40px;">
+          <h3 style="font-family: var(--font-heading); margin-bottom: 20px; font-size: 20px;">Filter by Price</h3>
+          <input type="range" min="0" max="100" value="50"
+            style="width: 100%; margin-bottom: 16px; accent-color: var(--color-primary);">
+          <div style="display: flex; justify-content: space-between; color: var(--text-secondary); font-size: 14px;">
+            <span>$0</span>
+            <span>$50+</span>
+          </div>
+        </div>
+
+        <!-- Popular Tags -->
+        <div class="sidebar-widget">
+          <h3 style="font-family: var(--font-heading); margin-bottom: 20px; font-size: 20px;">Popular Tags</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span
+              style="padding: 6px 12px; background: var(--bg-secondary); border-radius: 4px; font-size: 13px; color: var(--text-secondary);">Organic</span>
+            <span
+              style="padding: 6px 12px; background: var(--bg-secondary); border-radius: 4px; font-size: 13px; color: var(--text-secondary);">Fresh</span>
+            <span
+              style="padding: 6px 12px; background: var(--bg-secondary); border-radius: 4px; font-size: 13px; color: var(--text-secondary);">Local</span>
+            <span
+              style="padding: 6px 12px; background: var(--color-primary); color: white; border-radius: 4px; font-size: 13px;">Sale</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="shop-content">
+        <!-- Top bar (sort & count) -->
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid var(--border);">
+          <p style="color: var(--text-secondary); margin: 0;">Showing 1–6 of 32 results</p>
+          <select
+            style="padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: transparent; color: var(--text-primary); outline: none;">
+            <option>Default Sorting</option>
+            <option>Sort by Popularity</option>
+            <option>Sort by Price: Low to High</option>
+            <option>Sort by Price: High to Low</option>
+          </select>
+        </div>
+
+        <!-- Grid -->
+        <div class="products-row highlight-row" style="gap: 30px;">
+          <!-- Product Card 1 -->
+          <div class="product-card reveal"
+            style="border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--card-bg); transition: var(--trans);">
+            <div class="product-img-wrap" style="aspect-ratio: 4/3; position: relative;">
+              <span
+                style="position: absolute; top: 12px; left: 12px; background: var(--color-accent); color: white; padding: 4px 10px; font-size: 12px; font-weight: 600; border-radius: 4px; z-index: 2;">Sale!</span>
+              <img src="assets/image/shop1.jpg" alt="Vine Tomatoes" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="product-info" style="padding: 20px; text-align: center;">
+              <div style="color: var(--text-muted); font-size: 13px; margin-bottom: 8px;">Vegetables</div>
+              <h3 style="font-size: 18px; margin-bottom: 8px;">Organic Vine Tomatoes</h3>
+              <div style="color: #FFB800; font-size: 14px; margin-bottom: 12px;">★★★★★</div>
+              <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">
+                <span
+                  style="text-decoration: line-through; color: var(--text-muted); font-size: 14px; font-weight: 400; margin-right: 8px;">$5.99</span>$4.99
+                / kg
+              </div>
+              <button class="btn btn-outline" style="padding: 10px 24px; font-size: 14px; margin: 0 auto; display: inline-block;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="product-card reveal delay-1"
+            style="border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--card-bg); transition: var(--trans);">
+            <div class="product-img-wrap" style="aspect-ratio: 4/3; position: relative;">
+              <img src="assets/image/shop2.jpg" alt="Strawberries" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="product-info" style="padding: 20px; text-align: center;">
+              <div style="color: var(--text-muted); font-size: 13px; margin-bottom: 8px;">Fruits</div>
+              <h3 style="font-size: 18px; margin-bottom: 8px;">Sweet Strawberries</h3>
+              <div style="color: #FFB800; font-size: 14px; margin-bottom: 12px;">★★★★☆</div>
+              <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">
+                $3.50 / pack
+              </div>
+              <button class="btn btn-outline" style="padding: 10px 24px; font-size: 14px; margin: 0 auto; display: inline-block;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card reveal delay-2"
+            style="border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--card-bg); transition: var(--trans);">
+            <div class="product-img-wrap" style="aspect-ratio: 4/3; position: relative;">
+              <img src="assets/image/shop3.jpg" alt="Kale" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="product-info" style="padding: 20px; text-align: center;">
+              <div style="color: var(--text-muted); font-size: 13px; margin-bottom: 8px;">Leafy Greens</div>
+              <h3 style="font-size: 18px; margin-bottom: 8px;">Organic Curly Kale</h3>
+              <div style="color: #FFB800; font-size: 14px; margin-bottom: 12px;">★★★★★</div>
+              <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">
+                $2.99 / bunch
+              </div>
+              <button class="btn btn-outline" style="padding: 10px 24px; font-size: 14px; margin: 0 auto; display: inline-block;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="product-card reveal"
+            style="border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--card-bg); transition: var(--trans);">
+            <div class="product-img-wrap" style="aspect-ratio: 4/3; position: relative;">
+              <img src="assets/image/shop4.jpg" alt="Avocado" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="product-info" style="padding: 20px; text-align: center;">
+              <div style="color: var(--text-muted); font-size: 13px; margin-bottom: 8px;">Fruits</div>
+              <h3 style="font-size: 18px; margin-bottom: 8px;">Hass Avocado</h3>
+              <div style="color: #FFB800; font-size: 14px; margin-bottom: 12px;">★★★★☆</div>
+              <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">
+                $1.99 / each
+              </div>
+              <button class="btn btn-outline" style="padding: 10px 24px; font-size: 14px; margin: 0 auto; display: inline-block;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div class="product-card reveal delay-1"
+            style="border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--card-bg); transition: var(--trans);">
+            <div class="product-img-wrap" style="aspect-ratio: 4/3; position: relative;">
+              <img src="assets/image/shop5.jpg" alt="Fresh Vegetables"
+                style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="product-info" style="padding: 20px; text-align: center;">
+              <div style="color: var(--text-muted); font-size: 13px; margin-bottom: 8px;">Boxes</div>
+              <h3 style="font-size: 18px; margin-bottom: 8px;">Weekly Harvest Box</h3>
+              <div style="color: #FFB800; font-size: 14px; margin-bottom: 12px;">★★★★★</div>
+              <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">
+                $39.99 / box
+              </div>
+              <button class="btn btn-outline" style="padding: 10px 24px; font-size: 14px; margin: 0 auto; display: inline-block;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="product-card reveal delay-2"
+            style="border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--card-bg); transition: var(--trans);">
+            <div class="product-img-wrap" style="aspect-ratio: 4/3; position: relative;">
+              <img src="assets/image/shop6.jpg" alt="Fresh Herbs" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="product-info" style="padding: 20px; text-align: center;">
+              <div style="color: var(--text-muted); font-size: 13px; margin-bottom: 8px;">Fresh Herbs</div>
+              <h3 style="font-size: 18px; margin-bottom: 8px;">Basil Bunch</h3>
+              <div style="color: #FFB800; font-size: 14px; margin-bottom: 12px;">★★★★★</div>
+              <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">
+                $2.50 / bunch
+              </div>
+              <button class="btn btn-outline" style="padding: 10px 24px; font-size: 14px; margin: 0 auto; display: inline-block;">Add to Cart</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: 60px;" class="reveal">
+          <a href="#"
+            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--color-primary); color: white; text-decoration: none; font-weight: 600;">1</a>
+          <a href="#"
+            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--border); color: var(--text-primary); text-decoration: none; font-weight: 600; transition: var(--trans);">2</a>
+          <a href="#"
+            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--border); color: var(--text-primary); text-decoration: none; font-weight: 600; transition: var(--trans);">3</a>
+          <a href="#"
+            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--border); color: var(--text-primary); text-decoration: none; font-weight: 600; transition: var(--trans);">→</a>
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 3: QUALITY GUARANTEE ═══════════════════════════════════ -->
+  <section style="padding: 100px 0;">
+    <div class="container reveal">
+      <div style="background: #FEF6E6; border-radius: 20px; padding: 60px; text-align: center;">
+        <h2 style="color: var(--color-secondary); margin-bottom: 20px;">The FreshBasket Guarantee</h2>
+        <p style="font-size: 18px; max-width: 600px; margin: 0 auto; color: #8A6D3B;">If your produce isn't perfectly
+          fresh upon delivery, we will immediately refund or replace the item. No questions asked.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 4: BULK DISCOUNT CTA ═══════════════════════════════════ -->
+  <section class="cta-immersive"
+    style="background: url('assets/image/shop-bg.jpg') center/cover fixed; padding: 120px 0;">
+    <div class="cta-overlay" style="background: rgba(0,0,0,0.7);"></div>
+    <div class="cta-content reveal">
+      <h3 style="color: white; margin-bottom: 20px;">Wholesale & Corporate Buyers</h3>
+      <p style="color: white;">Looking for a regular supply of premium organic produce for your restaurant or office?
+      </p>
+      <div class="cta-actions">
+        <a href="bulk-orders.html" class="btn btn-primary" style="background:white; color:black;">Enquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-link" style="margin-bottom:4px;">
+            <div class="logo-icon">F</div>
+            <span class="logo-text">Fresh<span>Basket</span></span>
+          </a>
+          <p>We connect farming families with health-conscious homes. Every order funds local agriculture and delivers
+            nature's finest produce to your table.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.03-2.83.2-.79 1.31-5.54 1.31-5.54s-.33-.67-.33-1.67c0-1.56.91-2.73 2.03-2.73.96 0 1.42.72 1.42 1.58 0 .97-.61 2.41-.93 3.74-.27 1.12.55 2.03 1.63 2.03 1.95 0 3.27-2.49 3.27-5.44 0-2.24-1.51-3.91-4.24-3.91-3.09 0-5.01 2.31-5.01 4.89 0 .89.26 1.51.66 1.99.18.22.21.31.14.56-.05.18-.16.62-.2.8-.06.25-.25.34-.46.25-1.31-.54-1.92-1.99-1.92-3.62 0-2.68 2.26-5.89 6.73-5.89 3.6 0 5.97 2.6 5.97 5.4 0 3.7-2.06 6.47-5.1 6.47-1.02 0-1.97-.55-2.3-1.17l-.63 2.42c-.23.89-.85 2-1.27 2.68A10 10 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html">Shop All Produce</a></li>
+            <li><a href="seasonal-produce.html">Seasonal Availability</a></li>
+            <li><a href="farmers.html">Our Farming Partners</a></li>
+            <li><a href="gallery.html">Farm Gallery</a></li>
+            <li><a href="bulk-orders.html">Bulk &amp; Wholesale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Our Brand</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Organic Story</a></li>
+            <li><a href="delivery.html">Delivery Process</a></li>
+            <li><a href="pricing.html">Subscription Boxes</a></li>
+            <li><a href="blog.html">Recipes &amp; Articles</a></li>
+            <li><a href="home-2.html">Harvest Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html">Help &amp; FAQ</a></li>
+            <li><a href="contact.html">Get In Touch</a></li>
+            <li><a href="login.html">My Account</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="coming-soon.html">Newsletter Signup</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 FreshBasket Limited. All rights reserved. Sourced with love &amp; purpose.
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top-btn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Basket Side Drawer Component -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Basket</h3>
+      <button class="cart-close" id="cart-close" aria-label="Close drawer">&times;</button>
+    </div>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="https://images.unsplash.com/photo-1566385101042-1a010c129fa6?auto=format&fit=crop&q=80&w=150"
+          alt="Tomatoes" class="cart-item-img">
+        <div class="cart-item-details">
+          <div class="cart-item-name">Organic Vine Tomatoes</div>
+          <div class="cart-item-price">1x $4.99 / kg</div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-total">
+      <span>Subtotal:</span>
+      <span>$4.99</span>
+    </div>
+    <a href="shop.html" class="btn-premium btn-primary"
+      style="text-align: center; display: block; border-radius: 30px;">Checkout Basket</a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
