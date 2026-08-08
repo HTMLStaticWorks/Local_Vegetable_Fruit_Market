@@ -221,3 +221,8 @@ body.dark-mode select.form-control {
   padding-right: 15px;
   padding-left: 40px;
 }
+
+body.dark-mode select option {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
