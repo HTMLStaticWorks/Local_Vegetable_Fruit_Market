@@ -713,8 +713,7 @@ body.nav-open {
   z-index: 10;
   max-width: 1440px;
   width: 100%;
-  padding: 0 60px;
-  padding-top: 120px;
+  padding: 80px 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -825,6 +824,8 @@ body.nav-open {
   overflow: hidden;
   aspect-ratio: 4/5;
   box-shadow: 0 40px 100px rgba(0, 0, 0, .4);
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .hero-img-main img {
@@ -1499,7 +1500,14 @@ body.nav-open {
   }
 
   .editorial-feature .ef-img {
-    height: 300px;
+    height: auto;
+  }
+
+  .editorial-feature .ef-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
   }
 
   .editorial-feature.reverse .ef-img {
@@ -1522,6 +1530,14 @@ body.nav-open {
 @media (max-width: 600px) {
   .products-row {
     grid-template-columns: 1fr;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form .btn {
+    align-self: center;
   }
 }
 
@@ -1897,12 +1913,14 @@ body.nav-open {
 .testimonials-section {
   padding: 120px 0;
   background: var(--card-bg);
+  text-align: center;
 }
 
 .testimonials-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  text-align: center;
 }
 
 .testimonial-card {
@@ -1953,7 +1971,12 @@ body.nav-open {
 .t-author {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 14px;
+}
+
+.t-author>div {
+  text-align: left;
 }
 
 .t-avatar {
@@ -2755,12 +2778,14 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 .impact-stats {
   display: flex;
   justify-content: center;
   gap: 80px;
   margin-top: 60px;
 }
+
 @media (max-width: 768px) {
   .impact-stats {
     flex-direction: column;
@@ -2774,11 +2799,13 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
+
 @media (max-width: 768px) {
   .grid-2-col {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 991px) {
   .highlight-row {
     grid-template-columns: 1fr !important;
@@ -2791,6 +2818,7 @@ body {
   grid-template-columns: 280px 1fr;
   gap: 40px;
 }
+
 @media (max-width: 991px) {
   .shop-layout {
     grid-template-columns: 1fr;
@@ -2803,13 +2831,16 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
   .hero-content {
     align-items: center;
     text-align: center;
   }
+
   .hero-actions {
     justify-content: center;
   }
+
   .hero-stats {
     justify-content: center;
   }
@@ -2823,4 +2854,3 @@ body {
     z-index: 10 !important;
   }
 }
-
